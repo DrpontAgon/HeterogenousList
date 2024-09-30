@@ -75,7 +75,7 @@ True
 λ> (True ::: 'a' ::: HNil) +++ HNil == True ::: 'b' ::: HNil
 False
 
-Lists with different types at the same position cause a complation error.
+Lists with different types at the same position cause a compilation error.
 -}
 
 infixr 5 :::
@@ -176,4 +176,4 @@ HNil       +++ ys = ys
 (x ::: xs) +++ ys = x ::: xs +++ ys
 
 -- Problem: We have to define the EXACT SAME function on type level (type families) and value level.
--- Solution: Dependent types allow the neccessary abstraction and is enough to define the function only once.
+-- Solution: Dependent types allow the necessary abstraction and is enough to define the function only once.
